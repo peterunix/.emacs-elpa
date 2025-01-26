@@ -10,7 +10,7 @@ Example Usage:
 
 #+begin_src emacs-lisp
 ; Method 1: Offline Folder
-(setq package-archives '(("myelpa" . "~/myelpa/")))
+(setq package-archives '(("~/.emacs-elpa" . "~/.emacs-elpa/")))
 
 ; Method 2: Dropbox Repo
 (add-to-list 'package-archives

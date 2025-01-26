@@ -1,0 +1,22 @@
+* Offline Elpa Repository
+
+Created using https://github.com/redguardtoo/elpa-mirror
+
+Used to "freeze" your packages on a working Emacs system
+
+____________________________________________________________
+
+Example Usage:
+
+#+begin_src emacs-lisp
+; Method 1: Offline Folder
+(setq package-archives '(("myelpa" . "~/myelpa/")))
+
+; Method 2: Dropbox Repo
+(add-to-list 'package-archives
+             '("myelpa" . "https://dl.dropboxusercontent.com/u/858862/myelpa/"))
+
+; Method 3: Github Repo
+(add-to-list 'package-archives
+             '(".emacs-elpa" . "https://raw.githubusercontent.com/peterunix/.emacs-elpa/master/"))
+#+end_src
